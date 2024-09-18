@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="title">What's your name?!</h1>
+        <p id="description">
+            This form has created to discover your name,
+            that's right! All question here were carefully thought
+            specifically to discover the most important word for you,
+            your name!
+        </p>
+        <form id="survey-form" action="answer.html">
+            <label for="name" id="name-label">Name *</label>
+            <input id="name" type="text" placeholder="Your name" required>
+            <label for="email" id="email-label">Email *</label>
+            <input id="email" type="email" placeholder="Your email" required>
+            <label for="number" id="number-label">Luck number *</label>
+            <input id="number" type="number" placeholder="Your luck number" min="0" max="2" required>
+            <label for="dropdown">You're a lover?</label>
+            <select id="dropdown">
+                <option>I'm a lover</option>
+                <option>I'm a hater</option>
+            </select>
+            <fieldset>
+                <legend>What food do you like?</legend>
+                <input id="potato" type="radio" name="choosed-food" value="potato" checked/>
+                <label for="potato">Potato</label>
+                <input id="watermelon" type="radio" name="choosed-food" value="watermelon"/>
+                <label for="watermelon">Watermelon</label>
+                <input id="poutine" type="radio" name="choosed-food" value="poutine"/>
+                <label for="poutine">Poutine</label>
+            </fieldset>
+            <fieldset>
+                <legend>What brings you joy?</legend>
+                <input id="chess" name="chess" type="checkbox" value="yes">
+                <label for="chess">Chess</label>
+                <input id="music" name="music" type="checkbox" value="yes">
+                <label for="music">Music</label>
+                <input id="crushing" name="crushing" type="checkbox" value="yes">
+                <label for="crushing">Crushing other's feelings</label>
+            </fieldset>
+            <label for="whales">Whales?</label>
+            <textarea id="whales" placeholder="Your thoughs about whales..." required></textarea>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+        <footer>
+            <p><a href="https://opengameart.org/content/space-background-2">background</a> posted by StumpyStrust</p>
+        </footer>
+    </body>
+</html>
